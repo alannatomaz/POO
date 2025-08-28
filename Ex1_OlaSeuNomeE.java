@@ -11,7 +11,7 @@ public class Ex1_OlaSeuNomeE {
 		System.out.println("Digite sua idade: ");
 		int idade = scanner.nextInt();
 		
-		System.out.println("Olá, " + nome + " Alanvocê tem " + idade + " anos");
+		System.out.println("Olá, " + nome + " você tem " + idade + " anos");
 		
 		scanner.close();
 		

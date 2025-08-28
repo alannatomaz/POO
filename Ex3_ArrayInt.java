@@ -1,27 +1,24 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Algoritmo3 {
+public class Ex3_ArrayInt {
+    public static void main(String[] args) {
+    	
+        Scanner scanner = new Scanner(System.in);
+        
+        Integer[] numeros = new Integer[5]; 
+        
+        
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.print("Digite o " + (i + 1) + " número: ");
+            numeros[i] = scanner.nextInt();
+        }
 
-	public static void main(String[] args) {
+        System.out.println("\nNumeros armazenados no array:");
+        	for (Integer num : numeros) {
+        		
+        		System.out.println(num);
+        }
 
-		System.out.println("Insira uma string: ");
-		Scanner scanner = new Scanner(System.in);
-		String texto = scanner.nextLine();
-
-		char[] textoArray = texto.toCharArray();
-		System.out.println(Arrays.toString(textoArray));
-
-		for (int i = 0, j = textoArray.length - 1; i <= j; i++, j--) {
-			char inicio = textoArray[i];
-			char fim = textoArray[j];
-			char aux = inicio;
-			textoArray[i] = fim;
-			textoArray[j] = aux;
-		}
-
-		System.out.println(String.valueOf(textoArray));
-
-	}
-
+        scanner.close();
+    }
 }
